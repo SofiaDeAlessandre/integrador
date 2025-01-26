@@ -3,12 +3,12 @@
 /*-----------------------------------------*/
 
 .main-header {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #menu {
-    display: none;
+  display: none;
 }
 
 /*-----------------------------------------*/
@@ -16,27 +16,27 @@
 /*-----------------------------------------*/
 
 .nav-bar {
-    background-color: aquamarine;
-    //  display: none;
+  background-color: aquamarine;
+  //  display: none;
 
-    &__nav-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-    }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+  }
 
-    &__nav-item {
-        text-align: center;
-        background-color: pink;
-    }
+  &__nav-item {
+    text-align: center;
+    background-color: pink;
+  }
 
-    &__nav-link {
-        display: block;
-        background-color: purple;
-        padding: 1rem 2rem;
-        color: white;
-    }
+  &__nav-link {
+    display: block;
+    background-color: purple;
+    padding: 1rem 2rem;
+    color: white;
+  }
 }
 
 /*-----------------------------------------*/
@@ -44,34 +44,38 @@
 /*-----------------------------------------*/
 
 .search-bar {
-    display: flex;
-    background-color: olivedrab;
-    justify-content: space-around;
+  display: flex;
+  background-color: olivedrab;
+  justify-content: space-around;
 
-    &__logo-container {
-        width: 18.75rem;
-        height: 3.75rem;
-    }
+  &__logo-container {
+    width: 18.75rem;
+    height: 3.75rem;
+  }
 
-    &__form-container {
-        padding: 1rem;
-        background-color: gold;
-    }
+  &__form-container {
+    padding: 1rem;
+    background-color: gold;
+  }
 
-&__form-label {
-background-color: greenyellow;
+  &__form-label {
+    background-color: greenyellow;
+  }
+
+  &__form-search {
+    background-color: deeppink;
+  }
+
+  &__form-submit {
+    background-color: darkslategray;
+  }
+
+  &__carrito-container {
+    flex: 0 0 3rem;
+    background-color: goldenrod;
+  }
 }
 
-&__form-search {
-background-color: deeppink;
-}
-
-&__form-submit {
-background-color: darkslategray;
-}
-
-    &__carrito-container {
-        flex: 0 0 3rem;
-        background-color: goldenrod;
-    }
-}
+/*-----------------------------------------*/
+/* MENU TOOGLE*/
+/*-----------------------------------------*/
