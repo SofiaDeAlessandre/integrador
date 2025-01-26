@@ -56,6 +56,9 @@
   &__form-container {
     padding: 1rem;
     background-color: gold;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
   }
 
   &__form-label {
