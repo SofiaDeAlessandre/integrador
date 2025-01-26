@@ -19,6 +19,10 @@
   &:checked + .nav-bar {
     display: block;
   }
+
+  &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+    background-color: yellow;
+  }
 }
 
 /*-----------------------------------------*/
