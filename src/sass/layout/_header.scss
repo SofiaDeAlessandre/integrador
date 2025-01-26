@@ -1,0 +1,40 @@
+/*-----------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------*/
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu {
+    display: none;
+}
+
+/*-----------------------------------------*/
+/* NAVBAR*/
+/*-----------------------------------------*/
+
+.nav-bar {
+    background-color: aquamarine;
+     display: none;
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: purple;
+        padding: 1rem 2rem;
+        color: white;
+    }
+}
