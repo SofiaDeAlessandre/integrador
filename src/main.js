@@ -7,6 +7,9 @@ let html = "";
 containerProducts.innerHTML = html;
 
 const start = () => {
+
+    const fragment = new DocumentFragment();
+
   products.forEach((prod) => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -34,8 +37,10 @@ const start = () => {
     cardDescription.appendChild(p);
     cardContent.appendChild(cardDescription);
     article.appendChild(cardContent);
-    containerProducts.appendChild(card);
-  });
+    fragment.appendChild(card);
+  })
+
+  containerProducts.appendChild(fragment)
 };
 
 window.addEventListener("DOMContentLoaded", start);
