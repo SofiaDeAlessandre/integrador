@@ -17,7 +17,7 @@
 
 .nav-bar {
     background-color: aquamarine;
-     display: none;
+    //  display: none;
 
     &__nav-list {
         display: flex;
@@ -36,5 +36,42 @@
         background-color: purple;
         padding: 1rem 2rem;
         color: white;
+    }
+}
+
+/*-----------------------------------------*/
+/* SEARCH BAR*/
+/*-----------------------------------------*/
+
+.search-bar {
+    display: flex;
+    background-color: olivedrab;
+    justify-content: space-around;
+
+    &__logo-container {
+        width: 18.75rem;
+        height: 3.75rem;
+    }
+
+    &__form-container {
+        padding: 1rem;
+        background-color: gold;
+    }
+
+&__form-label {
+background-color: greenyellow;
+}
+
+&__form-search {
+background-color: deeppink;
+}
+
+&__form-submit {
+background-color: darkslategray;
+}
+
+    &__carrito-container {
+        flex: 0 0 3rem;
+        background-color: goldenrod;
     }
 }
