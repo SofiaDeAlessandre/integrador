@@ -79,3 +79,41 @@
 /*-----------------------------------------*/
 /* MENU TOOGLE*/
 /*-----------------------------------------*/
+
+.menu-toogle {
+    display: block;
+    background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1rem;
+    }
+
+    &__bottom-bread {
+        bottom: .8rem;
+    }
+}
