@@ -2,6 +2,11 @@
 /*HEADER*/
 /*-----------------------------------------*/
 
+:root {
+  --firstColor: rgb(231, 195, 187);
+}
+
+
 .main-header {
   display: flex;
   flex-direction: column-reverse;
@@ -30,7 +35,7 @@
 /*-----------------------------------------*/
 
 .nav-bar {
-  background-color: aquamarine;
+  background-color: var(--firstColor);
    display: none;
 
   &__nav-list {
@@ -48,12 +53,11 @@
 
   &__nav-item {
     text-align: center;
-    background-color: pink;
   }
 
   &__nav-link {
     display: block;
-    background-color: purple;
+    background-color: var(--firstColor);
     padding: 1rem 2rem;
     color: white;
   }
@@ -71,37 +75,41 @@
 
 .search-bar {
   display: flex;
-  background-color: olivedrab;
+  background-color: var(--firstColor);
   justify-content: space-around;
 
   &__logo-container {
     width: 18.75rem;
     height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__form-container {
     padding: 1rem;
-    background-color: gold;
     display: flex;
     flex-basis: 100%;
     justify-content: center;
   }
 
   &__form-label {
-    background-color: greenyellow;
+    background-color: var(--firstColor);
   }
 
   &__form-search {
-    background-color: deeppink;
+    background-color: var(--firstColor);
   }
 
   &__form-submit {
-    background-color: darkslategray;
+    background-color: var(--firstColor);
   }
 
   &__carrito-container {
     flex: 0 0 3rem;
-    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

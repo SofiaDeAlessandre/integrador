@@ -37,10 +37,17 @@ const products = [
         {
             id: 6,
              name: "Drácenas",
-              img: "imgs/dracenas.jpg",
+              img: "imgs/dracenas-1.jpg",
              description: "esta especie de plantas son muy sencillas de mantener y muy decorativas. Sus largas hojas verdes y sus troncos nos recuerdan a las palmeras, por lo que aportarán un toque exótico a nuestro hogar. No suelen ser pantas muy exigentes, pero la luz abundante (siempre indirecta), el riego moderado evitando que se seque el sustrato y una temperatura estable entre 20 y 25 grados conseguirán que gane belleza con los años. Entre más de sus 40 variedades puedes encontrar el tronco de Brasil (la más popular), la dracaena marginata o la dracena Lindenii.",
              price: 5533
-            }
+            },
+            {
+                id: 7,
+                 name: "Cactus, grasas y suculentas",
+                  img: "imgs/cactus-grasas-suculentas.jpg",
+                 description: "son una de las opciones más resistentes para interior. Además de poder escoger entre una gran variedad de especies, son muy fáciles de cuidar y sus necesidades de agua son muy bajas. Además, se adaptan muy bien a ambientes secos y a los espacios cerrados. Puedes colocar alguna de estas especies mezcladas con otros objetos o crear un rincón natural, dedicado especialmente a varios cactus o suculentas.",
+                 price: 5533
+                }
 ]
 
 export default products
