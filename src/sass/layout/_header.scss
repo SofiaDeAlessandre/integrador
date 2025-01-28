@@ -91,6 +91,7 @@
     display: flex;
     flex-basis: 100%;
     justify-content: center;
+    gap: 1em;
   }
 
   &__form-label {
@@ -99,10 +100,13 @@
 
   &__form-search {
     background-color: var(--firstColor);
+    border-radius: 5px;
   }
 
   &__form-submit {
     background-color: var(--firstColor);
+    padding: 5px;
+    border-radius: 5px;
   }
 
   &__carrito-container {
