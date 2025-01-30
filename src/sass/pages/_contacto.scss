@@ -1,4 +1,57 @@
 body {
-    min-height: 100vh;
     display: grid;
+    min-height: 100vh;
+}
+
+.main-header{
+    align-self: start;
+}
+
+.footer {
+    align-self: end;
+}
+
+:root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(84,89,49);
+    --thirdColor: rgb(166,183,103);
+    --fourthColor: rgb(248, 241, 240);
+  }
+
+/*-----------------------------------------*/
+/*MAIN FORM*/
+/*-----------------------------------------*/
+.main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------------*/
+/*FORM*/
+/*-----------------------------------------*/
+.main-form__form {
+padding: 50px;
+
+&__fieldset {
+border-radius: 5px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 2em;
+box-shadow: 2px 2px 2px 2px var(--thirdColor);
+background-color: var(--firstColor);
+}
+
+&__name, &__email, &__tel, &__description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+#name, #email, #tel, #description {
+    border-radius: 5px;
+}
+
 }
