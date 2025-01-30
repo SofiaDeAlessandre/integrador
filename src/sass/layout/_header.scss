@@ -6,6 +6,8 @@
   --firstColor: rgb(231, 195, 187);
   --secondColor: rgb(84,89,49);
   --thirdColor: rgb(166,183,103);
+  --fourthColor: rgb(248, 241, 240);
+  --fifthColor: rgb(49, 50, 28);
 }
 
 
@@ -63,7 +65,14 @@
     display: block;
     background-color: var(--firstColor);
     padding: 1rem 2rem;
-    color: white;
+    color: var(--fifthColor);
+    text-decoration: none;
+
+    &:hover {
+        text-shadow: 3px 3px 10px var(--fifthColor);
+        color: var(--fourthColor);
+    }
+
   }
 
   @media screen and (min-width: 992px){
@@ -89,6 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--fifthColor);
   }
 
   &__form-container {
@@ -101,17 +111,20 @@
 
   &__form-label {
     background-color: var(--firstColor);
+    color: var(--fifthColor);
   }
 
   &__form-search {
     background-color: var(--firstColor);
     border-radius: 5px;
+    color: var(--fifthColor);
   }
 
   &__form-submit {
     background-color: var(--firstColor);
     padding: 5px;
     border-radius: 5px;
+    color: var(--fifthColor);
   }
 
   &__carrito-container {
@@ -119,6 +132,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--fifthColor);
   }
 }
 

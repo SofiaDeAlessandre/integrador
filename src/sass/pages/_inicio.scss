@@ -1,11 +1,36 @@
 :root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(84,89,49);
+    --thirdColor: rgb(166,183,103);
     --fourthColor: rgb(248, 241, 240);
-}
+    --fifthColor: rgb(49, 50, 28);
+  }
 
 .section-cards {
     background-color: var(--fourthColor);
     padding: 1rem;
-}
+
+    &__header h1{
+        text-align: center;
+        color: var(--fifthColor);
+            animation: slideIn 2s ease forwards;
+            opacity: 0;
+            transform: translateX(-100%)
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
+
+
 
 .cards-container {
     background-color: var(--fourthColor);

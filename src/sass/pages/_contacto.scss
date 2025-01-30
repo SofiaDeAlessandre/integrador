@@ -43,7 +43,10 @@ box-shadow: 2px 2px 2px 2px var(--thirdColor);
 background-color: var(--firstColor);
 }
 
-&__name, &__email, &__tel, &__description{
+&__name, 
+&__email,
+ &__tel,
+  &__description{
     display: flex;
     flex-direction: column;
     text-align: center;
