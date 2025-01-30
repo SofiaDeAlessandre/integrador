@@ -1,9 +1,14 @@
+:root {
+    --fourthColor: rgb(248, 241, 240);
+}
+
 .section-cards {
-    background-color: #f1f2f3;
+    background-color: var(--fourthColor);
     padding: 1rem;
 }
 
 .cards-container {
+    background-color: var(--fourthColor);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

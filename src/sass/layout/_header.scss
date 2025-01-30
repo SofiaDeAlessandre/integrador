@@ -4,6 +4,8 @@
 
 :root {
   --firstColor: rgb(231, 195, 187);
+  --secondColor: rgb(84,89,49);
+  --thirdColor: rgb(166,183,103);
 }
 
 
@@ -26,7 +28,7 @@
   }
 
   &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-    background-color: yellow;
+    background-color: var(--secondColor);
   }
 }
 
@@ -79,8 +81,9 @@
   justify-content: space-around;
 
   &__logo-container {
-    width: 18.75rem;
-    height: 3.75rem;
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,14 +126,13 @@
 
 .menu-toogle {
     display: block;
-    background-color: red;
     flex: 0 0 3rem;
     position: relative;
     cursor: pointer;
 
     &__label {
         display: block;
-        background-color: black;
+        background-color: var(--thirdColor);
         height: 100%;
     }
 
@@ -138,7 +140,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #333;
+        background-color: #f8f4f4;
         height: .2rem;
         position: absolute;
         left: .5rem;
