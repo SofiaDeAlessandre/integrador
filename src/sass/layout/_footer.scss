@@ -1,0 +1,37 @@
+/*-----------------------------------------*/
+/*FOOTER*/
+/*-----------------------------------------*/
+
+:root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(84,89,49);
+    --thirdColor: rgb(166,183,103);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--firstColor);
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+    gap: 1em; 
+
+  &__section-icons-imgs {
+display: flex;
+flex-direction: column;
+gap: 2em;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 2em;
+  }
+
+  &__payment-method {
+    display: flex;
+    gap: 2em;
+  }
+
+}
