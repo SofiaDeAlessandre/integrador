@@ -6,7 +6,8 @@ export default {
     },
     build: {
         rollupOptions: {
-            input: resolve(__dirname, 'index.html')
+            input: resolve(__dirname, 'index.html'),
+            nosotros: resolve(__dirname, 'pages/nosotros/index.html'),
         }
     }
 }

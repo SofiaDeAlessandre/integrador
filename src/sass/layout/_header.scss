@@ -12,6 +12,8 @@
 .main-header {
   display: flex;
   flex-direction: column-reverse;
+  background-color: var(--firstColor);
+  
 
   @media screen and (min-width: 992px){
     & {
@@ -79,11 +81,11 @@
   display: flex;
   background-color: var(--firstColor);
   justify-content: space-around;
+  margin-left: 10px;
 
   &__logo-container {
-    background-color: aqua;
-    width: 30px;
-    height: 30px;
+    // width: 30px;
+    // height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
