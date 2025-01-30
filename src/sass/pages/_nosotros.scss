@@ -3,10 +3,36 @@ body {
     min-height: 100vh;
 }
 
+.main-header{
+    align-self: start;
+}
+
 .footer {
     align-self: end;
 }
 
 /*-----------------------------------------*/
+/*MAIN ABOUT US*/
+/*-----------------------------------------*/
+.main__about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+/*-----------------------------------------*/
 /*SECTION ABOUT US*/
 /*-----------------------------------------*/
+.section__about-us {
+
+
+&__header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+}
