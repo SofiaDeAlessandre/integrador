@@ -3,9 +3,11 @@
 /*-----------------------------------------*/
 
 :root {
-    --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(84,89,49);
-    --thirdColor: rgb(166,183,103);
+  --firstColor: rgb(231, 195, 187);
+  --secondColor: rgb(84,89,49);
+  --thirdColor: rgb(166,183,103);
+  --fourthColor: rgb(248, 241, 240);
+  --fifthColor: black;
   }
 
   .footer {
@@ -26,7 +28,7 @@ gap: 2em;
 
   &__icons {
     display: flex;
-    gap: 2em;
+    gap: 2px;
   }
 
   &__payment-method {

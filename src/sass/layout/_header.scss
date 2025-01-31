@@ -7,14 +7,14 @@
   --secondColor: rgb(84,89,49);
   --thirdColor: rgb(166,183,103);
   --fourthColor: rgb(248, 241, 240);
-  --fifthColor: rgb(49, 50, 28);
+  --fifthColor: black;
 }
-
 
 .main-header {
   display: flex;
   flex-direction: column-reverse;
   background-color: var(--firstColor);
+ 
   
 
   @media screen and (min-width: 992px){
@@ -23,6 +23,7 @@
     }
   }
 }
+
 
 #menu {
   display: none;
@@ -90,7 +91,7 @@
   display: flex;
   background-color: var(--firstColor);
   justify-content: space-around;
-  margin-left: 10px;
+  // margin-left: 10px;
 
   &__logo-container {
     // width: 30px;
@@ -99,6 +100,11 @@
     justify-content: center;
     align-items: center;
     color: var(--fifthColor);
+  }
+
+  &__mode {
+    background-color: var(--firstColor);
+    border: none;
   }
 
   &__form-container {

@@ -1,6 +1,7 @@
 import products from "./db/products";
 import "./sass/main.scss";
 
+
 const containerProducts = document.getElementById("container-products");
 
 let html = "";
