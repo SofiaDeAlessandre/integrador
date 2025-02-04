@@ -33,10 +33,20 @@ const start = () => {
     cardDescription.classList.add("card__description");
     const p = document.createElement("p");
     p.textContent = prod.description;
+    const price = document.createElement("p");
+    price.textContent = `Precio: $${prod.price}`;
+    price.classList.add("card__price");
+    const btn = document.createElement("button");
+    btn.textContent = "Comprar";
+    btn.classList.add("card__button")
+
+
 
     cardContent.appendChild(h2Title);
     cardDescription.appendChild(p);
     cardContent.appendChild(cardDescription);
+    cardContent.appendChild(price);
+    cardContent.appendChild(btn);
     article.appendChild(cardContent);
     fragment.appendChild(card);
   })

@@ -52,6 +52,16 @@ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         text-align: center;
     }
 
+    &__price {
+        margin: 5px;
+    }
+    &__button {
+        background-color: var(--secondColor);
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
     & {
         background-image: linear-gradient(rgb(231, 195, 187), white);
     }
@@ -80,6 +90,17 @@ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     max-width: 30%;
             height: 35vh;
         }
+
+        @media screen and (min-width: 1200px) {
+            & {
+                
+                min-width: 20%;
+        max-width: 25%;
+                height: 30vh;
+            }
+    
+        }
+
 
         &__article {
             flex-direction: column;
