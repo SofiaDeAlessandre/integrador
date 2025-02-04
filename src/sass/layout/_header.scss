@@ -4,7 +4,7 @@
 
 :root {
   --firstColor: rgb(231, 195, 187);
-  --secondColor: rgb(84,89,49);
+  --secondColor: rgb(174, 144, 139);
   --thirdColor: rgb(166,183,103);
   --fourthColor: rgb(248, 241, 240);
   --fifthColor: black;
@@ -13,7 +13,12 @@
 .main-header {
   display: flex;
   flex-direction: column-reverse;
-  background-color: var(--firstColor);
+  background-color: var(--fourthColor);
+  margin: 5px;
+  box-shadow: 0px 8px 20px var(--firstColor); 
+  position: relative; 
+  z-index: 10; 
+ 
  
   
 
@@ -42,7 +47,7 @@
 /*-----------------------------------------*/
 
 .nav-bar {
-  background-color: var(--firstColor);
+  background-color: var(--fourthColor);
    display: none;
 
   &__nav-list {
@@ -64,7 +69,7 @@
 
   &__nav-link {
     display: block;
-    background-color: var(--firstColor);
+    background-color: var(--fourthColor);
     padding: 1rem 2rem;
     color: var(--fifthColor);
     text-decoration: none;
@@ -89,9 +94,12 @@
 
 .search-bar {
   display: flex;
-  background-color: var(--firstColor);
+  background-color: var(--fourthColor);
   justify-content: space-around;
   // margin-left: 10px;
+  //box-shadow: 30px 8px 30px 30px rgba(0, 0, 0, 0.9);
+  
+  
 
   &__logo-container {
     // width: 30px;
@@ -100,6 +108,7 @@
     justify-content: center;
     align-items: center;
     color: var(--fifthColor);
+    margin-left: 10px;
   }
 
   &__mode {
@@ -108,29 +117,36 @@
   }
 
   &__form-container {
-    padding: 1rem;
-    display: flex;
+     display: flex;
     flex-basis: 100%;
     justify-content: center;
     gap: 1em;
+    flex-direction: column;
+    text-align: center;
   }
 
   &__form-label {
     background-color: var(--firstColor);
     color: var(--fifthColor);
+    display: none;
   }
 
   &__form-search {
-    background-color: var(--firstColor);
+    background-color: var(--fourthColor);
     border-radius: 5px;
     color: var(--fifthColor);
+    width: 200px;
+    margin: auto;
   }
 
   &__form-submit {
-    background-color: var(--firstColor);
+    background-color: var(--fourthColor);
     padding: 5px;
     border-radius: 5px;
     color: var(--fifthColor);
+    width: 100px;
+    height: 30px;
+    margin: auto;
   }
 
   &__carrito-container {
@@ -154,7 +170,7 @@
 
     &__label {
         display: block;
-        background-color: var(--thirdColor);
+        background-color: var(--firstColor);
         height: 100%;
     }
 

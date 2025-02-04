@@ -13,7 +13,7 @@ body {
 
 :root {
     --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(84,89,49);
+    --secondColor: rgb(174, 144, 139);
     --thirdColor: rgb(166,183,103);
     --fourthColor: rgb(248, 241, 240);
     --fifthColor: black;
@@ -26,6 +26,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        & {
+            
+    display: flex;
+    flex-direction: row;
+    
+}
+    }
+    
 }
 
 /*-----------------------------------------*/
@@ -40,7 +51,7 @@ padding: 10px;
 display: flex;
 flex-direction: column;
 gap: 2em;
-box-shadow: 2px 2px 2px 2px var(--thirdColor);
+box-shadow: 2px 2px 2px 2px var(--secondColor);
 background-color: var(--firstColor);
 }
 
@@ -57,5 +68,7 @@ background-color: var(--firstColor);
 #name, #email, #tel, #description {
     border-radius: 5px;
 }
+
+
 
 }

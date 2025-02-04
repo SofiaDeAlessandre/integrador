@@ -4,7 +4,7 @@
 
 :root {
   --firstColor: rgb(231, 195, 187);
-  --secondColor: rgb(84,89,49);
+  --secondColor: rgb(174, 144, 139);
   --thirdColor: rgb(166,183,103);
   --fourthColor: rgb(248, 241, 240);
   --fifthColor: black;
@@ -13,12 +13,16 @@
   .footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--firstColor);
+    background-color: var(--fourthColor);
     margin-top: 10px;
     padding: 10px;
     justify-content: center;
     align-items: center; 
     gap: 1em; 
+    box-shadow: 0px -8px 20px var(--firstColor); 
+  position: relative; 
+  z-index: 10; 
+ 
 
   &__section-icons-imgs {
 display: flex;
