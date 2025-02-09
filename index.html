@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Proyecto integrador - Inicio</title>
   </head>
   <body class="body">
+    <!--HEADER-->
     <header class="main-header">
-      <!--HEADER-->
       <input type="checkbox" id="menu" />
-
+      <!-- nav-bar-->
       <nav class="nav-bar">
-        <!-- nav-bar-->
         <ul class="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
             <a href="index.html" class="nav-bar__nav-link">Inicio</a>
@@ -21,28 +23,35 @@
             <a href="" class="nav-bar__nav-link">Alta</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="src/pages/nosotros/index.html" class="nav-bar__nav-link">Nosotros</a>
+            <a href="src/pages/nosotros/index.html" class="nav-bar__nav-link"
+              >Nosotros</a
+            >
           </li>
           <li class="nav-bar__nav-item">
-            <a href="src/pages/contacto/index.html" class="nav-bar__nav-link">Contacto</a>
+            <a href="src/pages/contacto/index.html" class="nav-bar__nav-link"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
       <!-- .nav-bar-->
 
+      <!--search-bar-->
       <div class="search-bar">
-        <!--search-bar-->
-        
-        <div class="search-bar__logo-container"><i class="fa-solid fa-seedling"></i></div>
+        <div class="search-bar__logo-container">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
         <form action="#" class="search-bar__form-container">
           <label for="busqueda" class="search-bar__form-label">Buscar</label>
           <input type="search" id="busqueda" class="search-bar__form-search" />
           <button type="submit" class="search-bar__form-submit">Buscar</button>
         </form>
-        <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="search-bar__carrito-container">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
 
+        <!--menu toogle-->
         <div class="menu-toogle">
-          <!--menu toogle-->
           <label for="menu" class="menu-toogle__label">
             <span class="menu-toogle__top-bread"></span>
             <span class="menu-toogle__meat"></span>
@@ -55,10 +64,10 @@
     </header>
     <!--.HEADER-->
 
+    <!--MAIN-->
     <main>
-      <!--MAIN-->
+      <!--section-->
       <section class="section-cards">
-        <!--section-->
         <header class="section-cards__header">
           <h1>¡Bienvenidos a Boutique!</h1>
           <p>Se encontraron x productos</p>
@@ -66,34 +75,53 @@
       </section>
       <!--.section-->
 
-      <section class="cards-container" id="container-products">
-        <!--cards container-->
-      </section>
+      <!--cards container-->
+      <section class="cards-container" id="container-products"></section>
       <!--.cards container-->
     </main>
     <!--.MAIN-->
 
     <!--FOOTER-->
     <footer class="footer">
-      <section class="footer__section-icons-imgs"> <!--footer section-icons-imgs-->
-     
-    <section class="footer__payment-method"> <!--footer payment method-->
-      <p>Medios de pago:</p>
-      <div class="footer__payment-method__visa"><img src="imgs/visa.webp" alt="Tarjeta Visa"></div>
-  <div class="footer__payment-method__mastercard"><img src="imgs/mastercard.webp" alt="Tarjeta Mastercard"></div>
-<div class="footer__payment-method__mercado-pago"><img src="/public/imgs/mercado-pago.webp" alt="Mercado Pago"></div>
-</section><!--.footer payment method-->
+      <!--footer section-icons-imgs-->
+      <section class="footer__section-icons-imgs">
+        <!--footer payment method-->
+        <section class="footer__payment-method">
+          <p>Medios de pago:</p>
+          <div class="footer__payment-method__visa">
+            <img src="imgs/visa.webp" alt="Tarjeta Visa" />
+          </div>
+          <div class="footer__payment-method__mastercard">
+            <img src="imgs/mastercard.webp" alt="Tarjeta Mastercard" />
+          </div>
+          <div class="footer__payment-method__mercado-pago">
+            <img src="imgs/mercado-pago.webp" alt="Mercado Pago" />
+          </div>
+        </section>
+        <!--.footer payment method-->
 
-<section class="footer__icons"> <!--footer icons section-->
-  <p>Buscanos en nuestras redes sociales:</p>
-    <div class="footer__icon-instagram"><i class="fa-brands fa-instagram"></i></div>
-  <div class="footer__icon-facebook"><i class="fa-brands fa-square-facebook"></i></div>
-  <div class="footer__icon-correo"><i class="fa-solid fa-envelope"></i></div>
-</section><!--.footer icons section-->
-</section><!--.footer section-icons-imgs-->
-<section class="footer__copyrigth"><!-- section footer copyrigth-->
-  ® COPYRIGTH SOFIA DE ALESSANDRE 2025
-</section><!-- .section footer copyrigth-->
+        <!--footer icons section-->
+        <section class="footer__icons">
+          <p>Buscanos en nuestras redes sociales:</p>
+          <div class="footer__icon-instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="footer__icon-facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
+          <div class="footer__icon-correo">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </section>
+        <!--.footer icons section-->
+      </section>
+      <!--.footer section-icons-imgs-->
+
+      <!-- section footer copyrigth-->
+      <section class="footer__copyrigth">
+        ® COPYRIGTH SOFIA DE ALESSANDRE 2025
+      </section>
+      <!-- .section footer copyrigth-->
     </footer>
     <!--.FOOTER-->
 

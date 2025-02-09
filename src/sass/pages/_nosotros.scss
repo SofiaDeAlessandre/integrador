@@ -1,54 +1,41 @@
 body {
-    display: grid;
-    min-height: 100vh;
+  display: grid;
+  min-height: 100vh;
 }
 
-.main-header{
-    align-self: start;
+.main-header {
+  align-self: start;
 }
 
 .footer {
-    align-self: end;
+  align-self: end;
 }
 
 /*-----------------------------------------*/
 /*MAIN ABOUT US*/
 /*-----------------------------------------*/
 .main__about-us {
-//     background-image: url(/imgs/cintas.webp);
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    background-color: rgba(0, 0, 0, 0.5);
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 3rem;
-//     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    text-align: center;
-background-image: url(/imgs/cintas.webp);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-color: rgba(225, 193, 193, 0.5); 
-background-blend-mode: lighten;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  background-image: url(/imgs/section-img.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(225, 193, 193, 0.5);
+  background-blend-mode: lighten;
 }
 
 /*-----------------------------------------*/
 /*SECTION ABOUT US*/
 /*-----------------------------------------*/
 .section__about-us {
-
-
-&__header {
+  &__header {
     display: flex;
     flex-direction: column;
     gap: 2em;
-}
-
+  }
 }

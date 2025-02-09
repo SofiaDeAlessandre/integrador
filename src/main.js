@@ -1,15 +1,13 @@
 import products from "./db/products";
 import "./sass/main.scss";
 
-
 const containerProducts = document.getElementById("container-products");
 
 let html = "";
 containerProducts.innerHTML = html;
 
 const start = () => {
-
-    const fragment = new DocumentFragment();
+  const fragment = new DocumentFragment();
 
   products.forEach((prod) => {
     const card = document.createElement("div");
@@ -38,9 +36,7 @@ const start = () => {
     price.classList.add("card__price");
     const btn = document.createElement("button");
     btn.textContent = "Comprar";
-    btn.classList.add("card__button")
-
-
+    btn.classList.add("card__button");
 
     cardContent.appendChild(h2Title);
     cardDescription.appendChild(p);
@@ -49,10 +45,9 @@ const start = () => {
     cardContent.appendChild(btn);
     article.appendChild(cardContent);
     fragment.appendChild(card);
-  })
+  });
 
-  containerProducts.appendChild(fragment)
+  containerProducts.appendChild(fragment);
 };
 
 window.addEventListener("DOMContentLoaded", start);
-

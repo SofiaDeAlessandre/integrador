@@ -1,83 +1,79 @@
 body {
-    display: grid;
-    min-height: 100vh;
+  display: grid;
+  min-height: 100vh;
 }
 
-.main-header{
-    align-self: start;
+.main-header {
+  align-self: start;
 }
 
 .footer {
-    align-self: end;
+  align-self: end;
 }
 
 :root {
-    --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(174, 144, 139);
-    --thirdColor: rgb(166,183,103);
-    --fourthColor: rgb(248, 241, 240);
-    --fifthColor: black;
-  }
+  --firstColor: rgb(231, 195, 187);
+  --secondColor: rgb(174, 144, 139);
+  --thirdColor: rgb(48, 54, 23);
+  --fourthColor: rgb(248, 241, 240);
+  --fifthColor: black;
+}
 
 /*-----------------------------------------*/
 /*MAIN FORM*/
 /*-----------------------------------------*/
 .main-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    @media screen and (min-width: 768px) {
-        & {
-            
-    display: flex;
-    flex-direction: row;
-    
-}
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: row;
     }
-    
+  }
 }
 
 /*-----------------------------------------*/
 /*FORM*/
 /*-----------------------------------------*/
 .main-form__form {
-padding: 50px;
+  padding: 50px;
 
-&__fieldset {
-border-radius: 5px;
-padding: 10px;
-display: flex;
-flex-direction: column;
-gap: 2em;
-box-shadow: 2px 2px 2px 2px var(--secondColor);
-background-color: var(--firstColor);
-}
+  &__fieldset {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 2px 2px 2px 2px var(--secondColor);
+    background-color: var(--firstColor);
+  }
 
-&__name, 
-&__email,
- &__tel,
-  &__description{
+  &__name,
+  &__email,
+  &__tel,
+  &__description {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1em;
-}
+  }
 
-#name, #email, #tel, #description {
+  #name,
+  #email,
+  #tel,
+  #description {
     border-radius: 5px;
-}
-
-
-
+  }
 }
 iframe {
-    @media screen and (min-width: 768px) {
-        & {
-            width: 200px;
-            height: 400px;
-    
-}
+  @media screen and (min-width: 768px) {
+    & {
+      width: 200px;
+      height: 400px;
     }
+  }
 }
