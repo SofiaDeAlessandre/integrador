@@ -13,7 +13,7 @@
 .main-header {
   display: flex;
   flex-direction: column-reverse;
-  background-color: var(--fourthColor);
+  background-color: var(--firstColor);
   box-shadow: 0px 8px 20px var(--firstColor);
   position: relative;
   z-index: 10;
@@ -42,7 +42,7 @@
 /*-----------------------------------------*/
 
 .nav-bar {
-  background-color: var(--fourthColor);
+  background-color: var(--firstColor);
   display: none;
 
   &__nav-list {
@@ -64,7 +64,7 @@
 
   &__nav-link {
     display: block;
-    background-color: var(--fourthColor);
+    background-color: var(--firstColor);
     padding: 1rem 2rem;
     color: var(--fifthColor);
     text-decoration: none;
@@ -88,7 +88,7 @@
 
 .search-bar {
   display: flex;
-  background-color: var(--fourthColor);
+  background-color: var(--firstColor);
   justify-content: space-around;
 
   &__logo-container {
@@ -120,21 +120,27 @@
   }
 
   &__form-search {
-    background-color: var(--fourthColor);
+    background-color: var(--firstColor);
     border-radius: 5px;
+    border-color: var(--secondColor);
     color: var(--fifthColor);
     width: 200px;
     margin: auto;
   }
 
   &__form-submit {
-    background-color: var(--fourthColor);
+    background-color: var(--secondColor);
     padding: 5px;
     border-radius: 5px;
-    color: var(--fifthColor);
-    width: 100px;
-    height: 30px;
+    border-color: var(--secondColor);
     margin: auto;
+    margin-bottom: 5px;
+    color: var(--fourthColor);
+    &:hover {
+      cursor: pointer;
+      background-color: var(--firstColor);
+      color: var(--fifthColor);
+    }
   }
 
   &__carrito-container {

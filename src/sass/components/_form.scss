@@ -2,79 +2,80 @@
 /*FORM*/
 /*-----------------------------------------*/
 :root {
-    --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(174, 144, 139);
-    --thirdColor: rgb(48, 54, 23);
-    --fourthColor: rgb(248, 241, 240);
-    --fifthColor: black;
-  }
-
-.main-form__form {
-    padding: 50px;
-  
-    &__fieldset {
-      border-radius: 5px;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-      box-shadow: 2px 2px 2px 2px var(--secondColor);
-      background-color: var(--fourthColor);
-    
-      &:focus-within {
-        background-color: var(--firstColor);
-      }
-    }
-     
-    &__legend {
-        text-align: center;
-        padding: 5px;
-    border: 1px solid var(--fifthColor);
-    border-radius: 5px;
-    background-color: var(--secondColor);
-    color: var(--fourthColor);
+  --firstColor: rgb(231, 195, 187);
+  --secondColor: rgb(174, 144, 139);
+  --thirdColor: rgb(48, 54, 23);
+  --fourthColor: rgb(248, 241, 240);
+  --fifthColor: black;
 }
 
-    &__name,
-    &__email,
-    &__tel,
-    &__description {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 0.5em;
-    }
-  
-    #name,
-    #email,
-    #tel,
-    #description {
-      border-radius: 5px;
-    }
+.main-form__form {
+  padding: 50px;
 
-    &__btn
-    {background-color: var(--secondColor);
+  &__fieldset {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 2px 2px 2px 2px var(--secondColor);
+    background-color: var(--fourthColor);
+
+    &:focus-within {
+      background-color: var(--firstColor);
+    }
+  }
+
+  &__legend {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--fifthColor);
+    border-radius: 5px;
+    border-color: var(--secondColor);
+    background-color: var(--secondColor);
+    color: var(--fourthColor);
+  }
+
+  &__name,
+  &__email,
+  &__tel,
+  &__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  #name,
+  #email,
+  #tel,
+  #description {
+    border-radius: 5px;
+  }
+
+  &__btn {
+    background-color: var(--secondColor);
     padding: 5px;
     border-radius: 5px;
+    border-color: var(--secondColor);
     margin: 5px;
     color: var(--fourthColor);
     width: 50%;
     margin: auto;
 
     &:hover {
-        cursor: pointer;
-      }
-}
-  }
-
-  
-
-  iframe {
-    @media screen and (min-width: 768px) {
-      & {
-        width: 200px;
-        height: 400px;
-      }
+      cursor: pointer;
+      background-color: var(--firstColor);
+      color: var(--fifthColor);
     }
   }
-  
+}
+
+iframe {
+  @media screen and (min-width: 768px) {
+    & {
+      width: 200px;
+      height: 400px;
+    }
+  }
+}
